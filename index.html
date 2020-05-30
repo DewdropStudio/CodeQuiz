@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
+<!-- link CSS -->
+<link href="style.css" rel="stylesheet">
+    <!-- link JS -->
+    <script src="style.js"></script>
 </head>
 <body>
     <!-- Heading -->
@@ -42,11 +46,20 @@
 <input type="radio" id="multipleChoice" name="question3" value="In the Footer Section">In the Footer Section<br>
 <input type="radio" id="multipleChoice" name="question3" value="In the Footer">In the Footer Section<br>
 
-
-
-
-
+<!-- Finished Button -->
+<input id="button" type="button" value="I'm finished!" onclick = "check();">
 
 </form> 
+
+<div id="afterSubmit">
+    <p id="numberCorrect">
+        Good Job! You finished (:
+    </p>
+
+</div>
+
+
+
 </body>
+
 </html>
