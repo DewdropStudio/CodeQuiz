@@ -3,62 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-<!-- link CSS -->
+    <title> Code Quiz </title>
+
+    <!-- link CSS -->
 <link href="style.css" rel="stylesheet">
-    <!-- link JS -->
-    <script src="style.js"></script>
+
+<!-- Jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 </head>
 <body>
-    <!-- Heading -->
-    <h1>Test your Coding Skills</h1>
+<!-- Heading -->
+    <h1>Test your Javascript Knowledge</h1>
+    <text>Time:<text id="time001">30</text></text>
 
-    <form id="Quiz" name="Quiz">
+<!-- Quiz -->
 
-    <!-- Question 1-->
-<p>
-    What is the object called that lets you work with both dates and time-related data?
-</p>
-
-<!-- Question 1 Answer Options -->
-<input type="radio" id=multipleChoice name="question1" value="Dates"> Dates<br>
-<input type="radio" id=multipleChoice name="question1" value="Time Field"> Time Field<br>
-<input type="radio" id=multipleChoice name="question1" value="Clock"> Clock<br>
-<input type="radio" id=multipleChoice name="question1" value="Time Warp"> Time Warp<br>
-
-<!-- Question 2 -->
-<p>What is the name of the statement that is used to exit or end a loop?</p>
-    
-<!-- Question 2 Answer Options -->
-<input type="radio" id=multipleChoice name="question2" value="Falter Statement">Falter Statement<br>
-<input type="radio" id=multipleChoice name="question2" value="Close Statement">Close Statement<br>
-<input type="radio" id=multipleChoice name="question2" value="Conditional Statement">Conditional Statement<br>
-<input type="radio" id=multipleChoice name="question2" value="Break Statement">Break Statement<br>
-
-<!-- Question 3 -->
-<p>
-    Where is the Jascript placed inside an HTML document or page?
-</p>
-
-<!-- Question 3 Answer Options -->
-<input type="radio" id="multipleChoice" name="question3" value="In the Title Section">In the Title Section<br>
-<input type="radio" id="multipleChoice" name="question3" value="In the Meta Section">In the Meta Section<br>
-<input type="radio" id="multipleChoice" name="question3" value="In the Footer Section">In the Footer Section<br>
-<input type="radio" id="multipleChoice" name="question3" value="In the Footer">In the Footer Section<br>
-
-<!-- Finished Button -->
-<input id="button" type="button" value="I'm finished!" onclick = "check();">
-
-</form> 
-
-<div id="afterSubmit">
-    <p id="numberCorrect">
-        Good Job! You finished (:
-    </p>
-
+<div class="quiz-container">
+    <div id="quiz"></div>
 </div>
+<!-- Buttons -->
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
 
+<div id="results"></div>
 
+ <!-- link JS -->
+ <script src="script.js"></script>
 
 </body>
 
