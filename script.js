@@ -153,3 +153,27 @@ showSlide(currentSlide);
 submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
+
+//timer
+var createQuiz = function () {
+  for (var i = 0; i < myQuestions.length; i++) {
+      console.log(myQuestions[i].askQuestion())
+  }
+}
+function startCountDown() {
+  var time = 30;
+  var interval = setInterval(function () {
+     time = time - 1;
+     if (time >= 0) {
+        var minutes = Math.floor(time / 60);
+        var seconds = time - (minutes * 60);
+        var display = minutes + ' : ' + seconds;
+        $("#timer").html(display);
+     }
+     else {
+        clearInterval(interval);
+     }
+  }, 1000);
+}
+
+startCountDown();
